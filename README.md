@@ -1,3 +1,5 @@
+DEMO: 
+https://script.google.com/macros/s/AKfycbyiB6c48g4HNn_JXaw2pqfm5o5TuMK3lUESIMdT_Ni4TWkZiYWo/exec
 Hướng Dẫn Sử dụng script Google
 Go to 
 https://www.google.com/script/start/
