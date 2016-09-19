@@ -1,0 +1,513 @@
+<html lang="vi">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ <head>
+     <title>Upload File Miễn Phí Không Giới Hạn</title>
+    <meta charset="utf-8">
+<style>
+.css_button {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #3866A3;
+    padding: 9px 18px;
+    text-shadow: 1px 1px 0px #5E5E5E;
+    -webkit-box-shadow: inset 1px 1px 0px 0px #BEE2F9;
+    -moz-box-shadow: inset 1px 1px 0px 0px #BEE2F9;
+    box-shadow: inset 1px 1px 0px 0px #BEE2F9;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #468ccf 5%, #63b8ee 100%);
+    background: -moz-linear-gradient(90deg, #468ccf 5%, #63b8ee 100%);
+    background: -ms-linear-gradient(90deg, #468ccf 5%, #63b8ee 100%);
+    background: linear-gradient(180deg, #63b8ee 5%, #468ccf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#63b8ee",endColorstr="#468ccf");
+}
+
+.css_button:hover {
+    background: -webkit-linear-gradient(90deg, #63b8ee 5%, #468ccf 100%);
+    background: -moz-linear-gradient(90deg, #63b8ee 5%, #468ccf 100%);
+    background: -ms-linear-gradient(90deg, #63b8ee 5%, #468ccf 100%);
+    background: linear-gradient(180deg, #468ccf 5%, #63b8ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#468ccf",endColorstr="#63b8ee");
+}
+
+.css_button:active {
+    position:relative;
+    top: 1px;
+}
+</style>
+<script>
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+    }
+</script>
+<style> 
+ .inputs {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 #FFF, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    -moz-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    -ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    -o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    box-shadow: 0 1px 0 #FFF, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #EAE7E7;
+    border: 1px solid #C8C8C8;
+    color: #777;
+    font: 13px Helvetica, Arial, sans-serif;
+    margin: 0 0 10px;
+    padding: 15px 10px 15px 40px;
+    width: 270px;
+}
+
+.inputs:focus {
+    -webkit-box-shadow: 0 0 2px #2b8d2b inset;
+    -moz-box-shadow: 0 0 2px #2b8d2b inset;
+    -ms-box-shadow: 0 0 2px #2b8d2b inset;
+    -o-box-shadow: 0 0 2px #2b8d2b inset;
+    box-shadow: 0 0 2px #2b8d2b inset;
+    background-color: #FFF;
+    border: 1px solid #2b8d2b;
+    outline: none;
+}
+</style> 
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+select {
+  -moz-outline: none;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #CDCDCD;
+  width: 100%;
+  color: #333;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: underline;
+  color: #17a0ff;
+}
+a:hover {
+  color: #EB4D8A;
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.wrapper .container {
+  
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -160px;
+  display: block;
+  background: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 0px 11px 3px #bbb;
+  overflow: hidden;
+}
+.wrapper .container .header {
+  color: #fff;
+  font-size: 23px;
+  background: #00B5FA;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-weight: 500;
+}
+.wrapper .container .header .title {
+  float: left;
+}
+.wrapper .container .header .icon {
+  float: right;
+  font-size: 30px;
+  line-height: 50px;
+}
+.wrapper .container .content {
+  padding: 15px 30px;
+  font-size: 1.15em;
+}
+.wrapper .container .content #loading {
+  float: right;
+  display: none;
+}
+.wrapper .container .content #loading img {
+  width: 128px;
+}
+.wrapper .container .content .check {
+  color: #555;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition-delay: 0s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  margin-right: 5px;
+  line-height: 1.6em;
+}
+.wrapper .container .content .check:hover {
+  color: #000;
+  text-shadow: 0 1px 0 #ddd;
+}
+.wrapper .container .content .select {
+  width: 100px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition-delay: 0s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  display: inline-block;
+  position: relative;
+  margin-top: 2px;
+  height: 21px;
+  line-height: 21px;
+}
+.wrapper .container .content .select:hover {
+  border: 1px solid #999;
+  box-shadow: 0 0px 1px #ccc;
+}
+.wrapper .container .content .select select {
+  background: #fff;
+  border: none;
+  padding: 2px 5px;
+  width: 120px;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrapper .container .content .select .icon {
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  color: #333;
+}
+.wrapper .container .content .options {
+  display: block;
+  margin-bottom: 10px;
+}
+.wrapper .container .content .options .group {
+  padding: 2px 0;
+  height: 23px;
+  line-height: 23px;
+  display: block;
+  clear: both;
+}
+.wrapper .container .content .options .group label {
+  font-weight: 500;
+  color: #555;
+  float: left;
+}
+.wrapper .container .content .options .group .control {
+  margin-left: 10px;
+  float: left;
+  color: #ccc;
+  font-weight: 300;
+  line-height: 1;
+}
+.wrapper .container .content .options .group .control#upload-mode a {
+  color: #666;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition-delay: 0s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+}
+.wrapper .container .content .options .group .control#upload-mode a:hover, .wrapper .container .content .options .group .control#upload-mode a.active {
+  color: #17a0ff;
+}
+.wrapper .container .content .options .group.hide {
+  display: none;
+}
+.wrapper .container .content .button {
+  display: inline-block;
+  vertical-align: middle;
+  background: #00B5FA;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 8px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 3px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition-delay: 0s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrapper .container .content .button .icon {
+  margin-left: 5px;
+}
+.wrapper .container .content .button:hover {
+  background: #04a2fa;
+}
+.wrapper .container .content .button.hide {
+  display: none;
+}
+.wrapper .container .content .button.green {
+  background: #11c220;
+}
+.wrapper .container .content .button.green:hover {
+  background: #12af1e;
+}
+.wrapper .container .content .button.black {
+  background: #504855;
+}
+.wrapper .container .content .button.black:hover {
+  background: #3d3741;
+}
+.wrapper .container .content .upload-process .item, .wrapper .container .content .transload-process .item {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 5px;
+  overflow: hidden;
+}
+.wrapper .container .content .upload-process .item:hover, .wrapper .container .content .upload-process .item:hover, .wrapper .container .content .transload-process .item:hover, .wrapper .container .content .transload-process .item:hover {
+  background: #F3F3F3;
+}
+.wrapper .container .content .upload-process .item span, .wrapper .container .content .transload-process .item span {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+.wrapper .container .content .upload-process .item.waiting .status .icon, .wrapper .container .content .transload-process .item.waiting .status .icon {
+  color: #aaa;
+}
+.wrapper .container .content .upload-process .item.uploaded .status .icon, .wrapper .container .content .transload-process .item.uploaded .status .icon {
+  color: #309320;
+}
+.wrapper .container .content .upload-process .item.uploadfail .status .icon, .wrapper .container .content .transload-process .item.uploadfail .status .icon {
+  color: #aa262d;
+}
+.wrapper .container .content .upload-process .item .name input, .wrapper .container .content .transload-process .item .name input {
+  width: 200px;
+  color: #2eace8;
+}
+.wrapper .container .content .upload-process .item .result input, .wrapper .container .content .transload-process .item .result input {
+  width: 235px;
+}
+.wrapper .container .content .upload-process .item .result input[disabled], .wrapper .container .content .transload-process .item .result input[disabled] {
+  color: #bbb;
+}
+.wrapper .container .content .upload-process .item .loading, .wrapper .container .content .transload-process .item .loading {
+  display: none;
+}
+.wrapper .container .content .upload-process .item .transparent, .wrapper .container .content .transload-process .item .transparent {
+  background: transparent;
+  border: none;
+  font-style: 12px;
+  padding: 3px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #555;
+}
+.wrapper .container .content .upload-process .item .transparent:focus, .wrapper .container .content .transload-process .item .transparent:focus {
+  font-weight: 500;
+}
+.wrapper .container .content .upload-process .item .remove, .wrapper .container .content .transload-process .item .remove {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+}
+.wrapper .container .content .upload-process .item .remove:hover, .wrapper .container .content .transload-process .item .remove:hover {
+  color: #ff0000;
+}
+.wrapper .container .content .upload-process .item .refresh, .wrapper .container .content .transload-process .item .refresh {
+  display: none;
+  float: right;
+  cursor: pointer;
+  color: #8a10f9;
+}
+.wrapper .container .content .upload-process .item .refresh:hover, .wrapper .container .content .transload-process .item .refresh:hover {
+  color: #780dda;
+}
+.wrapper .container .content .transload-process {
+  display: none;
+}
+.wrapper .container .content .transload-process textarea {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 3px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  resize: vertical;
+  border: 1px solid #ddd;
+}
+.wrapper .container .content .upload-process, .wrapper .container .content .transload-process .list {
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wrapper .container .content #results .links {
+  display: none;
+  margin-top: 10px;
+}
+.wrapper .container .content #results .links .tabs {
+  overflow: hidden;
+}
+.wrapper .container .content #results .links .tabs .tab {
+  display: inline-block;
+  background: #eaeaea;
+  padding: 3px 6px;
+  cursor: pointer;
+  color: #888;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition-delay: 0s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+}
+.wrapper .container .content #results .links .tabs .tab:hover, .wrapper .container .content #results .links .tabs .tab.active {
+  color: #555;
+  text-shadow: 0 1px 0 #eee;
+  background: #ccc;
+}
+.wrapper .container .content #results .links textarea {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 3px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  resize: vertical;
+  border: 1px solid #ddd;
+}
+.wrapper .container .content.footer {
+  background: #EBEBEB;
+  position: relative;
+  height: 32px;
+}
+.wrapper .container .content.footer .action.transload {
+  display: none;
+}
+.wrapper .container .content.footer .copyright {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 11px;
+  color: #888;
+  text-shadow: 0 1px 0 #fff;
+}
+</style>
+
+
+  </head>
+ 
+<body>
+<div class="wrapper">
+<div class="container">
+<div class="header">
+     <div class="title">Upload File</div>
+    </div>
+    <br/>
+    <br/>
+<form id="myForm" style="text-align: center;">  
+
+<input type="text" name="myName" class="inputs" placeholder="Tên bạn" />
+<br/>
+ <input type="file" class="inputfile inputfile-6" name="myFile">
+<br/><br/> 
+<input type="submit" class="css_button" value="Upload File" 
+           onclick="this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded)
+                    .uploadFiles(this.parentNode);
+                    return false;"/>   
+
+</form>
+<div id="output" style="text-align: center;"></div>
+
+<script>
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+    }
+</script>
+<br/><br/>
+<div class="content footer">
+ <div class="group action upload">
+ <li>Đây là website chia sẻ tài liệu nén không upload video </li>
+ <li>Không Upload các nội dung sex, 18+, văn hóa độc hại </li>
+ </div>
+<div class="copyright">
+   <a href="https://973e525963a99b7ff4ed4a82ca6ef99812205d87.googledrive.com/host/0BzeYFCitQ5U5Z2lNTGJ1OXBEMWc/" target="_blank">Dữ Liệu Upload</a>
+ </div>
+</div>
+
+</div>
+</div>
+ </body>
+</html>
