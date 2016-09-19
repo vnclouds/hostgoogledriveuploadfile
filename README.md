@@ -22,9 +22,10 @@ click xuất bản triển khai ứng dụng web và chỉnh sửa một số th
 Lấy link trang quản lý file trên google sau khi sử dụng script trên 
 
 vào thư mục của bạn trên google drivber và lấy id của thư mục ibotvn do đoạn script google trên tạo ra 
+sau đó vào link quản lý file theo dạng
 https://googledrive.com/host/ + id thư mục
 Ví dụ
-- Địa chỉ liên kết trông như thế này
+- Địa chỉ liên kết file hoặc thư mục trông như thế này
 https://docs.google.com/file/d/0B23iNT4ecDGWNUpWTTB4TGhuTlk/edit?usp=sharing
 - Ở đây các bạn chỉ cần quan tâm đến đoạn code màu cam 0B23iNT4ecDGWNUpWTTB4TGhuTlk.
 - Và để có thể sử dụng link làm host thì bạn thêm đoạn code màu cam vào sau URL bên dưới:
